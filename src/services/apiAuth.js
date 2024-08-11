@@ -21,3 +21,9 @@ export async function getCurrentUser() {
 
   return data?.user;
 }
+
+export async function logout() {
+  const { error } = await supabase.auth.signOut();
+  console.log(error);
+  if (error) throw new Error(error.message);
+}
