@@ -14,9 +14,9 @@ function HeaderMenu() {
   const navigate = useNavigate();
 
   return (
-    <StyledHeaderMenu onClick={() => navigate('/account')}>
+    <StyledHeaderMenu>
       <li>
-        <ButtonIcon>
+        <ButtonIcon onClick={() => navigate('/account')}>
           <HiOutlineUser />
         </ButtonIcon>
       </li>
