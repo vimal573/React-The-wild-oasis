@@ -17,7 +17,7 @@ function DashboardLayout() {
   const { bookings, isLoading: isLoadingBooking } = useRecentBookings();
   const {
     isLoading: isLoadingStay,
-    stays,
+
     confirmedStays,
     numDays,
   } = useRecentStays();
